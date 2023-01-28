@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@axao/*": ["src/*"]
+    }
+  },
+  "exclude": ["node_modules/"]
+}

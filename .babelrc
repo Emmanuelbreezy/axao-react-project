@@ -1,0 +1,19 @@
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@axao/assets": "./src/assets",
+          "@axao/components": "./src/components",
+          "@axao/constants": "./src/constant",
+          "@axao/hoc": "./src/hoc",
+          "@axao/pages": "./src/pages",
+          "@axao/routes": "./src/routes",
+          "@axao/utils": "./src/utils"
+        }
+      }
+    ]
+  ]
+}
