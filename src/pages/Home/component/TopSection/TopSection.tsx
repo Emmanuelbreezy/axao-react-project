@@ -27,7 +27,9 @@ function TopSection() {
           <Image className="imageBg" src={bgLogo} />
         </div>
       </ImageGroup>
-      <Button text="Shop Product" />
+      <div className="ButtonDiv">
+        <Button text="Shop Product" />
+      </div>
     </Container>
   );
 }

@@ -1,10 +1,28 @@
+import device from "@axao/utils/devices";
 import styled from "styled-components";
 
 const DefaultButton = styled.button`
   font-family: ${(p) => p.theme.fontFamily};
-  text-align: center;
-  padding-bottom: 20px;
-  border: 1px solid ${(p) => p.theme.primaryColor};
+  -webkit-appearance: button;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-weight: 300;
+  width: 120px;
+  height: 50px;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 0px;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: ${(p) => p.theme.whiteColor};
+
+  @media ${device.laptop} {
+    width: 152px;
+    height: 57px;
+    line-height: 26px;
+    font-size: 17px;
+  }
 `;
 
 export default DefaultButton;

@@ -7,6 +7,27 @@ export const Container = styled.div`
   padding: 18px;
   padding-top: 35px;
   height: auto;
+
+  .ButtonDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -75px;
+
+    @media ${device.laptop} {
+      margin-top: 100px;
+    }
+
+    button {
+      z-index: 99;
+      margin-left: -5px;
+
+      @media ${device.laptop} {
+        margin-left: -29px;
+      }
+    }
+  }
 `;
 
 export const Header = styled.div`
