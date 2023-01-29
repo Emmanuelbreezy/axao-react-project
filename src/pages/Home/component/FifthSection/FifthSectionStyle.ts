@@ -7,11 +7,15 @@ interface CardPropsType {
 
 export const Container = styled.div`
   width: 100%;
+  margin: 0 auto;
   display: block;
-  padding: 11px;
   padding-top: 110px;
   height: auto;
   z-index: 99;
+
+  @media ${device.laptop} {
+    width: ${(p) => p.theme.containerWidth};
+  }
 `;
 
 export const Header = styled.div`
@@ -39,13 +43,19 @@ export const Header = styled.div`
 export const Group = styled.div`
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   overflow-y: hidden;
   overflow-x: hidden;
   gap: 30px;
 
+  @media ${device.laptop} {
+    flex-direction: row;
+  }
+
   .TransparentBox {
+    display: none;
     position: absolute;
     top: 114px;
     right: 0;
@@ -58,6 +68,10 @@ export const Group = styled.div`
     );
     opacity: 0.9;
     z-index: 99;
+
+    @media ${device.laptop} {
+      display: inline-block;
+    }
   }
 
   .ArrowCircle {
@@ -70,14 +84,21 @@ export const Group = styled.div`
 `;
 
 export const Card = styled.div<CardPropsType>`
-  width: 500px;
-  height: 400px;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 2rem;
   background-image: ${(p) => `url(${p.imgSrc})`};
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   mix-blend-mode: lighten;
   padding: 25px;
+
+  @media ${device.laptop} {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0rem;
+  }
 
   .TitleDiv {
     font-family: ${(p) => p.theme.fontFamily};

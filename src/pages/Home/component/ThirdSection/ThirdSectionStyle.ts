@@ -12,10 +12,14 @@ interface ColPropsType {
 
 export const Container = styled.div`
   width: 100%;
+  margin: 0 auto;
   display: block;
-  padding: 11px;
   height: auto;
   z-index: 99;
+
+  @media ${device.laptop} {
+    width: ${(p) => p.theme.containerWidth};
+  }
 `;
 
 export const Header = styled.div`

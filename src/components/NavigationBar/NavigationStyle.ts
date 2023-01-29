@@ -53,7 +53,7 @@ export const ListItem = styled.li<ListItemtType>`
   a {
     font-family: ${(p) => p.theme.fontFamily};
     font-style: normal;
-    font-weight: ${(p) => (p.active ? 500 : 300)};
+    font-weight: 500;
     line-height: 18px;
     text-align: center;
     text-transform: capitalize;
@@ -67,12 +67,13 @@ export const ListItem = styled.li<ListItemtType>`
 export const IconItemGroup = styled.ul`
   width: 100px;
   display: flex;
+  align-items: center;
 `;
 export const IconItem = styled.li`
   padding-left: 18px;
 
   svg {
-    width: 23px !important;
-    height: 23px !important;
+    width: 20px !important;
+    height: 20px !important;
   }
 `;

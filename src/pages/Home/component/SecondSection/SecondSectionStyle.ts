@@ -7,11 +7,16 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin: 0 auto;
   padding-top: 28px;
   padding-bottom: 28px;
   height: auto;
   margin-top: 55px;
   z-index: 99;
+
+  @media ${device.laptop} {
+    width: ${(p) => p.theme.containerWidth};
+  }
 `;
 
 export const Image = styled.img`

@@ -2,7 +2,8 @@ import device from "@axao/utils/devices";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
+  width: ${(p) => p.theme.containerWidth};
+  margin: 0 auto;
   display: block;
   padding: 11px;
   padding-top: 30px;

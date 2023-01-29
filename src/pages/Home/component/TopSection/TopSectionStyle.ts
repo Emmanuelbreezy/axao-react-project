@@ -2,9 +2,9 @@ import device from "@axao/utils/devices";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
+  width: ${(p) => p.theme.containerWidth};
+  margin: 0 auto;
   display: block;
-  padding: 11px;
   padding-top: 35px;
   height: auto;
 
@@ -13,6 +13,7 @@ export const Container = styled.div`
   }
 
   @media ${device.laptop} {
+    width: ${(p) => p.theme.containerWidth};
     padding: 18px;
     height: 750px;
   }

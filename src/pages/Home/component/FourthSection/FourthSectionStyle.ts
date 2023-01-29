@@ -7,11 +7,15 @@ interface ListGroupsItemPropsType {
 
 export const Container = styled.div`
   width: 100%;
+  margin: 0 auto;
   display: block;
-  padding: 11px;
   padding-top: 110px;
   height: auto;
   z-index: 99;
+
+  @media ${device.laptop} {
+    width: 100%;
+  }
 `;
 
 export const Header = styled.div`
@@ -71,7 +75,7 @@ export const CardBox = styled.div`
     @media ${device.laptop} {
       position: absolute;
       top: 10%;
-      right: -4.6099%;
+      right: 0%;
       width: auto;
     }
   }
@@ -96,7 +100,7 @@ export const ListGroups = styled.ul`
 
   @media ${device.laptop} {
     width: 30%;
-    margin: 0 150px;
+    margin: 0 250px;
   }
 `;
 
@@ -142,7 +146,8 @@ export const Slide = styled.div`
 `;
 
 export const Thumbnail = styled.img`
-  width: 306px;
+  width: 307px;
+  height: 235px;
 `;
 
 export const IconImage = styled.img`

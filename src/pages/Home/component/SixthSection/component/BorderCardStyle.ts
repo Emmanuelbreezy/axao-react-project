@@ -5,7 +5,8 @@ export const Container = styled.div`
   display: block;
   padding: 1px;
   width: 410px;
-  height: 292px;
+  height: auto;
+  margin-bottom: 8rem;
   z-index: 99;
   border: 1px solid #fff;
   border-radius: 20px;
@@ -14,6 +15,10 @@ export const Container = styled.div`
     linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
   background-origin: border-box;
   background-clip: content-box, border-box;
+
+  @media ${device.laptop} {
+    height: 292px;
+  }
 `;
 
 export const ImageDiv = styled.div`

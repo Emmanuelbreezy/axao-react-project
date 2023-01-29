@@ -3,11 +3,15 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
+  margin: 0 auto;
   display: block;
-  padding: 11px;
   padding-top: 110px;
   height: auto;
   z-index: 99;
+
+  @media ${device.laptop} {
+    width: ${(p) => p.theme.containerWidth};
+  }
 `;
 
 export const Header = styled.div`
@@ -56,8 +60,13 @@ export const Group = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   overflow-y: hidden;
   overflow-x: hidden;
   gap: 30px;
   padding-top: 13rem;
+
+  @media ${device.laptop} {
+    flex-direction: row;
+  }
 `;
