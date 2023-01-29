@@ -11,7 +11,7 @@ export const Col = styled.div`
 `;
 
 export const Container = styled.div`
-  width: 90%;
-  max-width: 1520px;
+  width: ${(p) => p.theme.containerWidth};
+  max-width: ${(p) => p.theme.maxWidth};
   margin: 0 auto;
 `;

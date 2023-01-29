@@ -1,10 +1,16 @@
 import device from "@axao/utils/devices";
 import styled from "styled-components";
 
-const DefaultButton = styled.button`
+interface DefaultButtonPropsType {
+  outline: boolean;
+  fontSize?: string;
+}
+
+const DefaultButton = styled.button<DefaultButtonPropsType>`
   font-family: ${(p) => p.theme.fontFamily};
   -webkit-appearance: button;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: ${(p) =>
+    p.outline ? ` 1px solid rgba(255, 255, 255, 0.3)` : "none"};
   box-sizing: border-box;
   border-radius: 20px;
   font-weight: 300;
@@ -21,7 +27,7 @@ const DefaultButton = styled.button`
     width: 152px;
     height: 57px;
     line-height: 26px;
-    font-size: 17px;
+    font-size: ${(p) => (p.fontSize ? p.fontSize : "17px")};
   }
 `;
 

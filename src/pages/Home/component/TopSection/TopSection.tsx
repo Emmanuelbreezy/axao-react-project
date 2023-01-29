@@ -28,7 +28,7 @@ function TopSection() {
         </div>
       </ImageGroup>
       <div className="ButtonDiv">
-        <Button text="Shop Product" />
+        <Button outline text="Shop Product" />
       </div>
     </Container>
   );

@@ -1,6 +1,14 @@
 import React from "react";
 import withLayout from "@axao/hoc/Layout/withLayout";
-import { TopSection, SecondSection, ThirdSection, FAQ } from "./component";
+import {
+  TopSection,
+  SecondSection,
+  ThirdSection,
+  FourthSection,
+  FifthSection,
+  SixthSection,
+  FAQ,
+} from "./component";
 
 function Home() {
   return (
@@ -8,6 +16,9 @@ function Home() {
       <TopSection />
       <SecondSection />
       <ThirdSection />
+      <FourthSection />
+      <FifthSection />
+      <SixthSection />
       <FAQ />
     </div>
   );

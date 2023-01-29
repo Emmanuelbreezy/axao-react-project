@@ -11,7 +11,7 @@ export const Nav = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 9999;
   width: 100%;
   border-bottom-width: 1px;
   background-color: ${(p) => p.theme.primaryColor};

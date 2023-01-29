@@ -4,18 +4,37 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   display: block;
-  padding: 18px;
+  padding: 11px;
   padding-top: 35px;
   height: auto;
 
+  @media ${device.mobileL} {
+    padding: 0px;
+  }
+
+  @media ${device.laptop} {
+    padding: 18px;
+    height: 750px;
+  }
+
   .ButtonDiv {
-    width: 100%;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: -75px;
 
+    @media ${device.mobileL} {
+      margin-left: 135px;
+      justify-content: flex-start;
+    }
+
     @media ${device.laptop} {
+      justify-content: center;
+      margin-top: 100px;
+    }
+
+    @media ${device.laptopL} {
       margin-top: 100px;
     }
 
@@ -23,8 +42,20 @@ export const Container = styled.div`
       z-index: 99;
       margin-left: -5px;
 
+      @media ${device.mobileL} {
+        position: absolute;
+        top: 10px;
+        left: 13.5%;
+      }
+
       @media ${device.laptop} {
-        margin-left: -29px;
+        margin-left: 68px;
+      }
+
+      @media ${device.laptopL} {
+        position: absolute;
+        top: 10px;
+        left: 31.5%;
       }
     }
   }
@@ -37,7 +68,7 @@ export const Header = styled.div`
   h1 {
     text-transform: capitalize;
     font-weight: 300 !important;
-    font-size: 22px;
+    font-size: 30px;
     line-height: 122.8%;
 
     @media ${device.tablet} {
@@ -55,7 +86,7 @@ export const Header = styled.div`
     display: block;
   }
 
-  color: #ffffff;
+  color: ${(p) => p.theme.textColor};
 `;
 
 export const ImageGroup = styled.div`
@@ -77,6 +108,10 @@ export const ImageGroup = styled.div`
     width: 150px;
     height: auto;
 
+    @media ${device.mobileL} {
+      left: 37%;
+    }
+
     @media ${device.laptop} {
       width: auto;
       left: 38%;
@@ -90,6 +125,10 @@ export const ImageGroup = styled.div`
     height: auto;
     z-index: 1;
 
+    @media ${device.mobileL} {
+      left: 37%;
+    }
+
     @media ${device.laptop} {
       width: auto;
       left: 40%;
@@ -100,6 +139,10 @@ export const ImageGroup = styled.div`
     top: 100px;
     width: 100px;
     height: auto;
+
+    @media ${device.mobileL} {
+      top: 60px;
+    }
 
     @media ${device.laptop} {
       width: auto;
@@ -114,7 +157,17 @@ export const ImageGroup = styled.div`
     width: 100px;
     height: auto;
 
+    @media ${device.mobileL} {
+      left: 14%;
+    }
+
     @media ${device.laptop} {
+      width: auto;
+      top: 100%;
+      left: 200px;
+    }
+
+    @media ${device.laptopL} {
       width: auto;
       top: 100%;
       left: 310px;
@@ -127,7 +180,17 @@ export const ImageGroup = styled.div`
     width: 100px;
     height: auto;
 
+    @media ${device.mobileL} {
+      left: 10%;
+    }
+
     @media ${device.laptop} {
+      width: auto;
+      top: 100px;
+      left: 80%;
+    }
+
+    @media ${device.laptopL} {
       width: auto;
       top: 100px;
       left: 80%;
@@ -140,7 +203,17 @@ export const ImageGroup = styled.div`
     width: 100px;
     height: auto;
 
+    @media ${device.mobileL} {
+      left: 75%;
+    }
+
     @media ${device.laptop} {
+      width: auto;
+      top: 100%;
+      left: 70%;
+    }
+
+    @media ${device.laptopL} {
       width: auto;
       top: 100%;
       left: 65%;
@@ -149,8 +222,19 @@ export const ImageGroup = styled.div`
 
   .imageBg {
     top: 45%;
+    width: 100px;
     left: 30%;
     z-index: 0;
+
+    @media ${device.laptop} {
+      width: auto;
+      left: 30%;
+    }
+
+    @media ${device.laptopL} {
+      width: auto;
+      left: 30%;
+    }
   }
 `;
 
