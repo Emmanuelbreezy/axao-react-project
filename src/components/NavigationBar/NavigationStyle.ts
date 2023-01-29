@@ -70,4 +70,9 @@ export const IconItemGroup = styled.ul`
 `;
 export const IconItem = styled.li`
   padding-left: 18px;
+
+  svg {
+    width: 23px !important;
+    height: 23px !important;
+  }
 `;

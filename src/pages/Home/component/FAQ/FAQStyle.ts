@@ -38,3 +38,9 @@ export const Col = styled.div`
     width: 60%;
   }
 `;
+export const Horizontal = styled.div`
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0;
+  width: 100%;
+`;

@@ -39,7 +39,6 @@ export const Header = styled.div`
     font-size: 18px;
     margin: 0;
     line-height: 30px;
-    font-family: ${(p) => p.theme.fontFamily};
     text-align: center !important;
     text-transform: capitalize;
     color: ${(p) => p.theme.lightTextColor} !important;

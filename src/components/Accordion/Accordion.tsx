@@ -26,7 +26,7 @@ function Accordion({
         <>
           <Disclosure.Button as={AccordionButton}>
             <h5>{title}</h5>
-            {open ? <SVG src={UpArrow} /> : <SVG src={DownArrow} />}
+            {open ? <SVG src={DownArrow} /> : <SVG src={UpArrow} />}
           </Disclosure.Button>
           <Disclosure.Panel as={AccordionPanel}>
             <p>{content}</p>

@@ -10,8 +10,8 @@ function withLayout(WrappedComponent: () => JSX.Element) {
         <NavigationBar />
         <AppContent>
           <WrappedComponent {...props} />
-          <Footer />
         </AppContent>
+        <Footer />
       </>
     );
   }

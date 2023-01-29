@@ -1,5 +1,10 @@
 import React from "react";
+import SVG from "react-inlinesvg";
 import logo from "@axao/assets/icons/logo.svg";
+import userIcon from "@axao/assets/image/Usericon.svg";
+import searchIcon from "@axao/assets/image/Search.svg";
+import cartIcon from "@axao/assets/image/Carticon.svg";
+
 import {
   Container,
   IconItem,
@@ -9,7 +14,6 @@ import {
   Logo,
   Nav,
 } from "./NavigationStyle";
-import { Cart, Search, User } from "../Icons";
 
 function NavigationBar() {
   return (
@@ -34,17 +38,17 @@ function NavigationBar() {
         <IconItemGroup>
           <IconItem>
             <a href="/">
-              <User width="1rem" height="1rem" />
+              <SVG src={userIcon} />
             </a>
           </IconItem>
           <IconItem>
             <a href="/">
-              <Search width="1rem" height="1rem" />
+              <SVG src={searchIcon} />
             </a>
           </IconItem>
           <IconItem>
             <a href="/">
-              <Cart width="1rem" height="1rem" />
+              <SVG src={cartIcon} />
             </a>
           </IconItem>
         </IconItemGroup>

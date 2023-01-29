@@ -5,16 +5,16 @@ export const AccordionGroup = styled.div`
   width: 100%;
   display: block;
   height: auto;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  //border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 `;
 
 export const AccordionButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  //border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding: 10px;
   padding-bottom: 5px;
+  cursor: pointer;
 
   h5 {
     color: ${(p) => p.theme.textColor};
@@ -35,7 +35,7 @@ export const AccordionPanel = styled.div`
 
   p {
     width: 100%;
-    font-style: normal;
+    font-family: ${(p) => p.theme.fontFamily};
     font-weight: 300;
     font-size: 18px;
     line-height: 116.8%;
