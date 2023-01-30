@@ -14,10 +14,16 @@ export const Container = styled.div<ContainerPropType>`
   background-size: contain;
 
   background-position: left bottom;
-  background-position-x: -70px;
-  background-position-y: 104px;
+  background-position-x: 100px;
+  background-position-y: none;
   margin-top: 80px;
-  height: 500px;
+  height: auto;
+
+  @media ${device.laptop} {
+    background-position-x: -70px;
+    background-position-y: 104px;
+    height: 500px;
+  }
 `;
 
 export const Header = styled.h1`
@@ -39,7 +45,7 @@ export const Col = styled.div`
   z-index: 99;
 
   .ListDiv {
-    width: 100%;
+    width: auto;
     display: flex;
     padding-left: 0rem;
     align-items: flex-start;
@@ -59,11 +65,16 @@ export const Col = styled.div`
 export const ListGroup = styled.ul`
   width: auto;
   margin: 0px;
+  margin-top: 25px;
   text-align: left !important;
   list-style-type: none;
   padding: 0 !important;
   font-family: ${(p) => p.theme.fontFamily};
   padding-top: 0px !important;
+
+  @media ${device.laptop} {
+    margin: 0px;
+  }
 `;
 
 export const ListItem = styled.li`

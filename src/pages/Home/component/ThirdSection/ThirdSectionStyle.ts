@@ -69,12 +69,16 @@ export const ListItem = styled.li<ListItemPropsType>`
     font-weight: 300;
     font-family: ${(p) => p.theme.fontFamily};
     font-style: normal;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 24px;
     padding-top: 10px;
     padding-bottom: 18px;
     text-transform: capitalize;
     color: ${(p) => p.theme.lightTextColor};
+
+    @media ${device.laptop} {
+      font-size: 24px;
+    }
   }
 `;
 
@@ -146,7 +150,7 @@ export const Col = styled.div<ColPropsType>`
   }
 
   .image1 {
-    width: 400px;
+    width: 100%;
     height: auto;
 
     @media ${device.laptop} {
@@ -155,7 +159,7 @@ export const Col = styled.div<ColPropsType>`
   }
 
   .image2 {
-    width: 400px;
+    width: 100%;
     margin-top: 55px;
     height: auto;
     display: flex;
@@ -163,12 +167,14 @@ export const Col = styled.div<ColPropsType>`
     justify-content: center;
 
     @media ${device.laptop} {
+      width: 400px;
+
       margin-top: 0px;
       width: auto;
     }
   }
   .image3 {
-    width: 300px;
+    width: 250px;
     margin-top: 15px;
 
     @media ${device.laptop} {

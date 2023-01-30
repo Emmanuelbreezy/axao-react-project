@@ -2,7 +2,7 @@ import device from "@axao/utils/devices";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: ${(p) => p.theme.containerWidth};
+  width: 100%;
   margin: 0 auto;
   display: block;
   padding-top: 35px;
@@ -136,12 +136,14 @@ export const ImageGroup = styled.div`
     }
   }
   .image3 {
-    left: 80%;
+    left: 72%;
     top: 100px;
-    width: 100px;
+    width: 90px;
     height: auto;
 
     @media ${device.mobileL} {
+      width: 100px;
+      left: 80%;
       top: 60px;
     }
 
@@ -153,12 +155,13 @@ export const ImageGroup = styled.div`
   }
 
   .image4 {
-    left: -5%;
+    left: 5%;
     top: 70%;
     width: 100px;
     height: auto;
 
     @media ${device.mobileL} {
+      width: 100px;
       left: 14%;
     }
 
@@ -176,12 +179,14 @@ export const ImageGroup = styled.div`
   }
 
   .image5 {
-    left: -8%;
-    top: 60px;
-    width: 100px;
+    left: 3%;
+    top: 100px;
+    width: 90px;
     height: auto;
 
     @media ${device.mobileL} {
+      top: 60px;
+      width: 100px;
       left: 10%;
     }
 
@@ -199,12 +204,13 @@ export const ImageGroup = styled.div`
   }
 
   .image6 {
-    left: 75%;
+    left: 70%;
     top: 70%;
-    width: 100px;
+    width: 90px;
     height: auto;
 
     @media ${device.mobileL} {
+      width: 100px;
       left: 75%;
     }
 

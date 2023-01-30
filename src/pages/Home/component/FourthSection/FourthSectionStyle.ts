@@ -69,7 +69,8 @@ export const CardBox = styled.div`
   flex-direction: column-reverse;
 
   .imageCard {
-    width: 200px;
+    width: 100%;
+    margin-top: 10px;
     height: auto;
 
     @media ${device.laptop} {
@@ -151,19 +152,30 @@ export const Thumbnail = styled.img`
 `;
 
 export const IconImage = styled.img`
+  width: 200px;
   position: absolute;
   left: 30%;
   bottom: 15px;
+
+  @media ${device.laptop} {
+    width: auto;
+  }
 `;
 
 export const Group = styled.div`
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 100px;
   width: 100%;
   height: auto;
+
+  @media ${device.laptop} {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   .imageMax {
     width: 300px;
@@ -182,6 +194,7 @@ export const Group = styled.div`
   }
 
   .TransparentBox {
+    display: none;
     position: absolute;
     top: 114px;
     right: 0;
@@ -194,11 +207,23 @@ export const Group = styled.div`
     );
     opacity: 0.9;
     z-index: 99;
+
+    @media ${device.laptop} {
+      display: block;
+    }
   }
 `;
 export const GroupCard = styled.div`
   display: grid;
-  grid-template-columns: auto auto auto;
-  margin-top: 0px;
-  grid-gap: 25px;
+  grid-template-columns: auto;
+  margin-top: 15px;
+  grid-gap: 0px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  @media ${device.laptop} {
+    grid-template-columns: auto auto auto;
+    grid-gap: 25px;
+    margin-top: 0px;
+  }
 `;
