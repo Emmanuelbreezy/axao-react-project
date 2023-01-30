@@ -50,6 +50,10 @@ export const Col = styled.div`
     padding-left: 0rem;
     align-items: flex-start;
     flex-direction: column;
+
+    @media ${device.mobileL} {
+      width: 80%;
+    }
   }
 
   @media ${device.laptop} {
