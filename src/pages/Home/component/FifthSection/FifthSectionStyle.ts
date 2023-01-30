@@ -45,7 +45,7 @@ export const Group = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   overflow-y: hidden;
   overflow-x: hidden;
   gap: 30px;
@@ -95,8 +95,8 @@ export const Card = styled.div<CardPropsType>`
   padding: 25px;
 
   @media ${device.laptop} {
-    width: 200px;
-    height: 200px;
+    width: 610px;
+    height: 544px;
     margin-bottom: 0rem;
   }
 

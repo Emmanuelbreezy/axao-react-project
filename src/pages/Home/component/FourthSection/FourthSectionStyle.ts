@@ -174,7 +174,8 @@ export const Group = styled.div`
 
   @media ${device.laptop} {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 28px;
   }
 
   .imageMax {
